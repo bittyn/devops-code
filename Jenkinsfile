@@ -31,7 +31,7 @@ pipeline {
       stage('Push Image') {
       steps{
         script {
-          docker.withRegistry( '', registryCredential ) {
+          docker.withRegistry( '', bittyn/devop-pipeline ) {
             dockerImage.push()
           }
     }
