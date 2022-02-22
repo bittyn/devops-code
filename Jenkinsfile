@@ -28,12 +28,6 @@ pipeline {
        }
        }
       }
-      stage('Push Image') {
-      steps{
-        script {
-          docker.withRegistry( '', bittyn/devop-pipeline ) {
-            dockerImage.push()
-          }
     }
   }
 }
