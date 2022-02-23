@@ -26,10 +26,7 @@ pipeline {
        script {
         docker.build registry + ":$BUILD_NUMBER"
        }
-       }
       }
     }
   }
-}
- }
 }
